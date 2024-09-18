@@ -1,0 +1,14 @@
+import java.util.*;
+
+class Solution {
+    public Pair<Long, Long> getMinMax(int[] arr) {
+        int n=arr.length;
+        int maximum=Integer.MIN_VALUE;
+        int minimum=Integer.MAX_VALUE;
+        for(int i=0;i<n;i++){
+            if(arr[i]>maximum) maximum=arr[i];
+            if(arr[i]<minimum) minimum=arr[i];
+        }
+        return new Pair(minimum,maximum);
+    }
+}
