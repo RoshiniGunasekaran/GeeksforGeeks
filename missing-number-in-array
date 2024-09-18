@@ -1,0 +1,11 @@
+class Solution {
+    int missingNumber(int n, int arr[]) {
+        int total_sum= n*(n+1)/2;
+        int temp=0;
+        for(int i : arr){
+            temp+=i;
+        }
+        int res=Math.abs(temp-total_sum);
+        return res;
+    }
+}
